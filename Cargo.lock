@@ -9,6 +9,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "77c3a9648d43b9cd48db467b3f87fdd6e146bcc88ab0180006cef2179fe11d01"
 dependencies = [
  "cfg-if",
+ "once_cell",
+ "version_check",
+ "zerocopy",
+]
+
+[[package]]
+name = "ahash"
+version = "0.8.7"
+source = "git+https://github.com/8e8b2c/aHash?rev=0fd5195dccaa701f0f789dc5ad009a598b439327#0fd5195dccaa701f0f789dc5ad009a598b439327"
+dependencies = [
+ "cfg-if",
  "getrandom",
  "once_cell",
  "version_check",
@@ -208,7 +219,7 @@ version = "0.14.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f93e7192158dbcda357bdec5fb5788eebf8bbac027f3f33e719d29135ae84156"
 dependencies = [
- "ahash",
+ "ahash 0.8.7 (registry+https://github.com/rust-lang/crates.io-index)",
  "allocator-api2",
 ]
 
@@ -301,7 +312,7 @@ dependencies = [
 name = "jaq-interpret"
 version = "1.4.0"
 dependencies = [
- "ahash",
+ "ahash 0.8.7 (git+https://github.com/8e8b2c/aHash?rev=0fd5195dccaa701f0f789dc5ad009a598b439327)",
  "dyn-clone",
  "hifijson",
  "indexmap",
