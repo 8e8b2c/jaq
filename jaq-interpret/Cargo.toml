@@ -17,7 +17,7 @@ std = []
 
 [dependencies]
 jaq-syn = { version = "1.1.0", path = "../jaq-syn" }
-ahash = { git = "https://github.com/8e8b2c/aHash", rev = "0fd5195dccaa701f0f789dc5ad009a598b439327" }
+ahash = { git = "https://github.com/8e8b2c/aHash", rev = "8ae6f1f848743f3113757daae665a76b5d414bad" }
 dyn-clone = "1.0"
 hifijson = { version = "0.2.0", optional = true }
 indexmap = "2.0"
