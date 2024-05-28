@@ -42,7 +42,7 @@ pub enum Val {
 }
 
 /// Order-preserving map
-type Map<K, V> = indexmap::IndexMap<K, V, ahash::RandomState>;
+type Map<K, V> = indexmap::IndexMap<K, V>;
 
 /// A value result.
 pub type ValR = Result<Val, Error>;
